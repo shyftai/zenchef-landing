@@ -5,7 +5,6 @@ import { HeroSection } from '@/components/hero/HeroSection';
 import { ValuePropsSection } from '@/components/value-props/ValuePropsSection';
 import { FlowDiagram } from '@/components/how-it-works/FlowDiagram';
 import { ChatDemo } from '@/components/demo/ChatDemo';
-import { TAMSection } from '@/components/tam/TAMSection';
 import { FeatureGrid } from '@/components/features/FeatureGrid';
 import { DeliverablesSection } from '@/components/deliverables/DeliverablesSection';
 import { PricingSection } from '@/components/pricing/PricingSection';
@@ -23,7 +22,6 @@ export default function Home() {
       <ValuePropsSection />
       <FlowDiagram />
       <ChatDemo />
-      <TAMSection />
       <FeatureGrid />
       <DeliverablesSection />
       <PricingSection />
