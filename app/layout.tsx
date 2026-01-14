@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { PasswordProtection } from "@/components/auth/PasswordProtection";
 
 export const metadata: Metadata = {
   title: "Sales Intelligence Cockpit | Zenchef Netherlands Expansion",
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <PasswordProtection>
+          {children}
+        </PasswordProtection>
       </body>
     </html>
   );
