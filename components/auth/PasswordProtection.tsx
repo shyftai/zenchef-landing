@@ -11,7 +11,7 @@ interface PasswordProtectionProps {
 
 export const PasswordProtection: React.FC<PasswordProtectionProps> = ({
   children,
-  password = 'zenchef2025' // Default password, change this!
+  password = 'Zenchef2026' // Default password, change this!
 }) => {
   const [isUnlocked, setIsUnlocked] = useState(false);
   const [inputPassword, setInputPassword] = useState('');
