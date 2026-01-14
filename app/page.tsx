@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import { HeroSection } from '@/components/hero/HeroSection';
-import { ComparisonSection } from '@/components/problem/ComparisonSection';
 import { ValuePropsSection } from '@/components/value-props/ValuePropsSection';
 import { FlowDiagram } from '@/components/how-it-works/FlowDiagram';
 import { ChatDemo } from '@/components/demo/ChatDemo';
@@ -21,7 +20,6 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <HeroSection />
-      <ComparisonSection />
       <ValuePropsSection />
       <FlowDiagram />
       <ChatDemo />
