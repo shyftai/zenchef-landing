@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@layer base {
+  :root {
+    /* New Zenchef Brand Colors (V2) */
+    --zenchef-blue: #4A5AD8;
+    --zenchef-blue-dark: #3D4BC4;
+    --zenchef-blue-light: #6B79E5;
+    --zenchef-cream: #F5F0EB;
+    --zenchef-cream-light: #FAF7F4;
+    --zenchef-white: #FFFFFF;
+    --zenchef-charcoal: #1A1A1A;
+    --zenchef-gray: #6B6B6B;
+    --zenchef-gray-light: #9CA3AF;
+    --zenchef-border-light: #E5E7EB;
+    --zenchef-border-medium: #D1D5DB;
+  }
+
+  * {
+    @apply border-zenchef-border-light;
+  }
+
+  body {
+    @apply bg-zenchef-cream text-zenchef-charcoal;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--zenchef-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--zenchef-blue);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--zenchef-blue-dark);
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default button styles */
+button {
+  @apply focus:outline-none focus:ring-2 focus:ring-zenchef-blue focus:ring-offset-2;
+}
